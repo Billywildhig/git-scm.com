@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 ruby "3.1.3"
 
-gem "rails", "~> 6.0"
+gem "rails", "~> 7.1", ">= 7.1.0"
 
 # hacks for rails6 + ruby 3.1
 gem 'net-imap', require: false
@@ -32,7 +32,7 @@ group :development do
 end
 
 group :development, :test do
-  gem "dotenv-rails"
+  gem "dotenv-rails", ">= 2.8.0"
   gem "listen"
   gem "pry-byebug"
   gem "rubocop"
@@ -49,7 +49,7 @@ group :test do
   gem "fabrication"
   gem "factory_bot_rails"
   gem "rails-controller-testing"
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 5.0.3"
   gem "shoulda"
   gem "vcr"
   gem "webmock"
